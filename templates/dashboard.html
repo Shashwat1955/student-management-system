@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+</head>
+
+
+<body>
+
+
+<h2>Student Dashboard</h2>
+
+
+<input id="name" placeholder="Name">
+
+<input id="age" placeholder="Age">
+
+<input id="course" placeholder="Course">
+
+
+<button onclick="addStudent()">Add Student</button>
+
+
+<button onclick="loadStudents()">Load Students</button>
+
+
+<ul id="list"></ul>
+
+
+<script>
+
+
+const token = localStorage.getItem("token")
+
+
+function addStudent(){
+
+fetch("/students", {
+
+method:"POST",
+
+headers:{
+
+"Content-Type":"application/json",
+
+"Authorization":"Bearer "+token
+
+},
+
+body:JSON.stringify({
+
+name:name.value,
+
+age:age.value,
+
+course:course.value
+
+})
+
+})
+
+.then(res=>res.json())
+
+.then(data=>alert(data.message))
+
+}
+
+
+
+function loadStudents(){
+
+fetch("/students", {
+
+headers:{
+
+"Authorization":"Bearer "+token
+
+}
+
+})
+
+.then(res=>res.json())
+
+.then(data=>{
+
+list.innerHTML=""
+
+data.forEach(s=>{
+
+list.innerHTML+=`<li>${s.name} | ${s.course}</li>`
+
+})
+
+})
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
