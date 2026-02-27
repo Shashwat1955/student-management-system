@@ -1,110 +1,57 @@
-# 🎓 Student Management System (JWT + Flask + Dashboard)
+# 🎓 Student Management System (Flask + JWT)
 
-A full-stack Student Management System built using Flask, JWT Authentication, SQLite, and a web dashboard.
+A secure full-stack Student Management System built with Flask, JWT Authentication, SQLite, and a web dashboard.
 
-This project demonstrates backend development, authentication, database management, and frontend integration.
+## 🚀 Features
 
----
-
-# 🚀 Live Demo
-
-🔗 Live Website: https://your-render-link.onrender.com
-
-🔗 GitHub Repo: https://github.com/Shashwat1955/student-management-system
-
----
-
-# ✨ Features
-
-- User Registration
-- User Login with JWT Authentication
-- Secure API endpoints
-- Add Student
+- User Registration & Login
+- JWT Authentication
+- Add Students
 - View Students
-- Dashboard UI
+- Secure REST API
+- Web Dashboard
 - SQLite Database
-- REST API
-- Swagger API Documentation
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-**Backend**
 - Python
 - Flask
 - Flask-SQLAlchemy
 - Flask-JWT-Extended
-
-**Frontend**
-- HTML
-- JavaScript
-
-**Database**
+- HTML, JavaScript
 - SQLite
 
-**Deployment**
-- Render
+---
+
+## 📂 Project Structure
+
+student-management-system  
+│  
+├── app.py  
+├── requirements.txt  
+├── Procfile  
+├── runtime.txt  
+│  
+├── templates  
+│   ├── login.html  
+│   └── dashboard.html  
 
 ---
 
-# 📂 Project Structure
-
-student-management-system
-│
-├── app.py
-├── requirements.txt
-├── Procfile
-├── runtime.txt
-│
-├── templates
-│ ├── login.html
-│ └── dashboard.html
-
-
----
-
-# ⚙️ Installation (Run Locally)
-
-## Clone repository
+## ▶️ Run Locally
 
 ```bash
-git clone https://github.com/Shashwat1955/student-management-system.git
-Go to folder
-cd student-management-system
-Install dependencies
 pip install -r requirements.txt
-Run server
 python app.py
-
-Open:
-
-http://127.0.0.1:5000
-🔐 API Endpoints
-Method	Endpoint	Description
-POST	/register	Register user
-POST	/login	Login user
-GET	/students	Get students
-POST	/students	Add student
-📸 Screenshots
-Login Page
-
-(Add screenshot here)
-
-Dashboard
-
-(Add screenshot here)
-
-🎯 Resume Project Description
-
-Built a secure Student Management System using Flask, JWT Authentication, SQLite, and REST APIs with a web dashboard for managing student records.
-
+```
 👨‍💻 Author
 
 Shashwat
 
-GitHub:
-https://github.com/Shashwat1955
+GitHub: https://github.com/Shashwat1955
 
-LinkedIn:
-https://linkedin.com/in/cseshashwat
+LinkedIn: https://linkedin.com/in/cseshashwat
+
+⭐ This project is built for learning backend development and placement preparation.
